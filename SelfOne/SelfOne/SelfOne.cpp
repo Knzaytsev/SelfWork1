@@ -8,18 +8,14 @@ using namespace std;
 
 int main()
 {
-	const unsigned int n = 4;
-	const unsigned int m = 4;
-	static unsigned int A[n][m];
-	static unsigned char min_row;
-	static unsigned char max_col;
-	//unsigned int index;
-	unsigned int count;
-	unsigned int ind_max = 0;
-	unsigned int k = m * 4;
-	unsigned int min;
-	unsigned short divider_row = 16;
-	unsigned short divider_col = 4;
+	const unsigned int n = 4; //Строки
+	const unsigned int m = 4; //Столбцы
+	static unsigned int A[n][m]; //Массив размера двойного слова
+	static unsigned char min_row; //Индекс строки
+	static unsigned char max_col; //Индекс столбца
+	unsigned int k = m * 4;		  //Переменная для перехода на следующую строку
+	unsigned short divider_row = 16; //Переменная для приведения в нормальный вид индекс строки
+	unsigned short divider_col = 4;  //Переменная для приведения в нормальный вид индекс столбца
 	for (int i = 0; i < n; ++i) {
 		for (int j = 0; j < m; ++j) {
 			cin >> A[i][j];

@@ -9,7 +9,7 @@ using namespace std;
 int main()
 {
 	static unsigned int m;
-	static unsigned char k;
+	static unsigned int k;
 	static unsigned int res;
 	static bool ok = true;
 	cin >> m;
@@ -18,8 +18,11 @@ int main()
 		push ebx
 		push eax
 		push ecx
-		mov al, k
-		sub al, 48
+		push edx
+		xor eax, eax
+		xor ebx, ebx
+		xor edx, edx
+		mov eax, k
 		call checkK
 		cmp ebx, 0
 		je endComp
@@ -29,29 +32,28 @@ int main()
 		jmp endProg
 		endComp:
 		mov ok, 0 
-		pop ebx
-		pop eax
-		pop ecx
 		jmp endProg
 
 		checkK:
-			mov bl, al
-			dec al
-			and al, bl
+			mov ebx, eax
+			dec eax
+			and eax, ebx
 			xor ebx, ebx
-			cmp al, 0
+			cmp eax, 0
 			jne endProc
 			inc ebx
 			endProc:
 		ret 
 
 		computeMul:
-			mov cl, k
-			sub cl, 48
-			shr eax, cl
+			div k
 		ret
 
 		endProg:
+		pop ebx
+		pop eax
+		pop ecx
+		pop edx
 	}
 	if (ok) {
 		cout << res;

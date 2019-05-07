@@ -8,10 +8,10 @@ using namespace std;
 
 int main()
 {
-	const unsigned int n = 3;
-	static unsigned short mas1[n];
-	static unsigned short mas2[n];
-	static signed char res[3];
+	const unsigned int n = 3;			//Количество элементов
+	static unsigned short mas1[n];		//первый массив
+	static unsigned short mas2[n];		//Второй массив
+	static signed char res[3];			//Результат
 	for (int i = 0; i < n; ++i) {
 		cin >> mas1[i];
 	}
@@ -40,6 +40,7 @@ repe	cmpsw
 		pop esi
 		pop edi
 	}
+
 	for (int i = 0; i < 3; ++i) {
 		cout << res[i];
 	}

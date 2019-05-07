@@ -1,6 +1,7 @@
-﻿  DecToBin.cpp
-c:\users\пк\desktop\учёба\2 курс\архитектура вычислительных систем\selfone\dectobin\dectobin.cpp(37): warning C4405: str: идентификатор является зарезервированным словом
-c:\users\пк\desktop\учёба\2 курс\архитектура вычислительных систем\selfone\dectobin\dectobin.cpp(43): warning C4405: str: идентификатор является зарезервированным словом
-c:\users\пк\desktop\учёба\2 курс\архитектура вычислительных систем\selfone\dectobin\dectobin.cpp(48): warning C4405: str: идентификатор является зарезервированным словом
-c:\users\пк\desktop\учёба\2 курс\архитектура вычислительных систем\selfone\dectobin\dectobin.cpp(55): warning C4405: str: идентификатор является зарезервированным словом
-  DecToBin.vcxproj -> C:\Users\пк\Desktop\Учёба\2 курс\Архитектура вычислительных систем\SelfOne\Debug\DecToBin.exe
+﻿  pch.cpp
+  DecToBin.cpp
+c:\users\пк\desktop\учёба\2 курс\архитектура вычислительных систем\selfwork1\selfone\dectobin\dectobin.cpp(34): warning C4405: str: идентификатор является зарезервированным словом
+c:\users\пк\desktop\учёба\2 курс\архитектура вычислительных систем\selfwork1\selfone\dectobin\dectobin.cpp(40): warning C4405: str: идентификатор является зарезервированным словом
+c:\users\пк\desktop\учёба\2 курс\архитектура вычислительных систем\selfwork1\selfone\dectobin\dectobin.cpp(45): warning C4405: str: идентификатор является зарезервированным словом
+c:\users\пк\desktop\учёба\2 курс\архитектура вычислительных систем\selfwork1\selfone\dectobin\dectobin.cpp(52): warning C4405: str: идентификатор является зарезервированным словом
+  DecToBin.vcxproj -> C:\Users\пк\Desktop\Учёба\2 курс\Архитектура вычислительных систем\SelfWork1\SelfOne\Debug\DecToBin.exe

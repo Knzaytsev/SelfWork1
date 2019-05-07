@@ -1,6 +1,6 @@
 ﻿  Task7_8.cpp
-c:\users\пк\desktop\учёба\2 курс\архитектура вычислительных систем\selfone\task7_8\task7_8.cpp(29): warning C4405: str: идентификатор является зарезервированным словом
-c:\users\пк\desktop\учёба\2 курс\архитектура вычислительных систем\selfone\task7_8\task7_8.cpp(33): warning C4405: str: идентификатор является зарезервированным словом
-c:\users\пк\desktop\учёба\2 курс\архитектура вычислительных систем\selfone\task7_8\task7_8.cpp(38): warning C4405: str: идентификатор является зарезервированным словом
-c:\users\пк\desktop\учёба\2 курс\архитектура вычислительных систем\selfone\task7_8\task7_8.cpp(49): warning C4405: str: идентификатор является зарезервированным словом
-  Task7_8.vcxproj -> C:\Users\пк\Desktop\Учёба\2 курс\Архитектура вычислительных систем\SelfOne\Debug\Task7_8.exe
+c:\users\пк\desktop\учёба\2 курс\архитектура вычислительных систем\selfwork1\selfone\task7_8\task7_8.cpp(28): warning C4405: str: идентификатор является зарезервированным словом
+c:\users\пк\desktop\учёба\2 курс\архитектура вычислительных систем\selfwork1\selfone\task7_8\task7_8.cpp(32): warning C4405: str: идентификатор является зарезервированным словом
+c:\users\пк\desktop\учёба\2 курс\архитектура вычислительных систем\selfwork1\selfone\task7_8\task7_8.cpp(37): warning C4405: str: идентификатор является зарезервированным словом
+c:\users\пк\desktop\учёба\2 курс\архитектура вычислительных систем\selfwork1\selfone\task7_8\task7_8.cpp(48): warning C4405: str: идентификатор является зарезервированным словом
+  Task7_8.vcxproj -> C:\Users\пк\Desktop\Учёба\2 курс\Архитектура вычислительных систем\SelfWork1\SelfOne\Debug\Task7_8.exe

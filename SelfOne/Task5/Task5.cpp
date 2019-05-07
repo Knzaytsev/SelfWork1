@@ -8,16 +8,18 @@ using namespace std;
 
 int main()
 {
-	const unsigned n = 2;
-	static unsigned char num1[n];
-	static unsigned char num2[n];
-	static unsigned char res[CHAR_MAX];
+	const unsigned n = 5;					//Количество цифр в числе
+	static unsigned int m = n;				//Результирующее количество элементов
+	static unsigned char num1[n];			//Первое число
+	static unsigned char num2[n];			//Второе число
+	static unsigned char res[CHAR_MAX];		//Результат
 	for (int i = 0; i < n; ++i) {
 		cin >> num1[i];
 	}
 	for (int i = 0; i < n; ++i) {
 		cin >> num2[i];
 	}
+
 	__asm {
 		push eax
 		push ecx
@@ -41,9 +43,34 @@ int main()
 			add res[esi], 48
 			dec esi
 		loop loopSub
+		cmp ah, 0
+		je labelContinue
+		xor eax, eax
+		mov ecx, n
+		inc m
+		mov esi, n
+		dec esi
+		mov al, res[esi]
+		loopNeg:
+			add al, ah
+			sub al, 58
+			neg al
+			mov ah, 1
+			inc esi
+			mov res[esi], al
+			add res[esi], 48
+			sub esi, 2
+			mov al, res[esi]
+		loop loopNeg
+		mov res[0], '-'
 		labelContinue:
+		pop eax
+		pop ecx
+		pop esi
+		pop ebx
 	}
-	for (int i = 0; i < n; ++i) {
+
+	for (int i = 0; i < m; ++i) {
 		cout << res[i];
 	}
 }

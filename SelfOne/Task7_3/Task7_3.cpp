@@ -8,9 +8,9 @@ using namespace std;
 
 int main()
 {
-	const unsigned int n = 5;
-	static unsigned char mas[n];
-	static signed char num;
+	const unsigned int n = 5;			//количество чисел
+	static unsigned char mas[n];		//массив чисел
+	static signed char num;				//искомое число
 	for (int i = 0; i < n; ++i) {
 		cin >> mas[i];
 	}

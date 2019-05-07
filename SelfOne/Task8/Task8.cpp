@@ -8,12 +8,12 @@ using namespace std;
 
 int main()
 {
-	const unsigned int n = 26;
-	static unsigned char source[n];
+	const unsigned int n = 5;					//Количество букв
+	static unsigned char source[n];				//Исходный текст
 	static unsigned char table[26]{ 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q',
-									'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z', 'a', 'b', 'c', 'd' };
-	static unsigned char result[n];
-	static unsigned char resultDec[n];
+									'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z', 'a', 'b', 'c', 'd' };	//Алфавит
+	static unsigned char result[n];				//Результат шифровки
+	static unsigned char resultDec[n];			//Результат дешифровки
 	for (int i = 0; i < n; ++i) {
 		cin >> source[i];
 	}

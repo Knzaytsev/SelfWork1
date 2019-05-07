@@ -8,12 +8,13 @@ using namespace std;
 
 int main()
 {
-	const unsigned int n = 256;
-	const unsigned int m = 5;
-	static unsigned char mas[m];
-	static unsigned char bits[n];
-	static unsigned char element;
-	static bool res;
+	const unsigned int n = 256;			//Количество всех возможных элементов
+	const unsigned int m = 5;			//Количество элементов в первом множестве
+	static unsigned char mas[m];		//Первое множество
+	static unsigned char bits[n];		//Множество со всеми элементами
+	static unsigned char element;		//Искомый элемент
+	static bool res;					//Результат
+	//Для начала вводится искомый элемент, а потом множество
 	cin >> element;
 	for (int i = 0; i < m; ++i) {
 		cin >> mas[i];

@@ -8,15 +8,15 @@ using namespace std;
 
 int main()
 {
-	const unsigned int n = 5;
-	const unsigned int m = n * 4;
-	static unsigned char num1[n];
-	static unsigned char num2[n];
-	static unsigned char num1BCD[m];
-	static unsigned char num2BCD[m];
-	static unsigned char divider = 2;
-	static unsigned char checker = 4;
-	static signed char res = 0;
+	const unsigned int n = 5;				//Количество цифр в числе
+	const unsigned int m = n * 4;			//Количество цифр в BCD-числе
+	static unsigned char num1[n];			//Первое число
+	static unsigned char num2[n];			//Второе число
+	static unsigned char num1BCD[m];		//Первое BCD-число
+	static unsigned char num2BCD[m];		//Второе BCD-число
+	static unsigned char divider = 2;		//Делитель для перевода
+	static unsigned char checker = 4;		//Делитель для проверки
+	static signed char res = 0;				//Результирующая переменная
 	for (int i = 0; i < n; ++i) {
 		cin >> num1[i];
 	}

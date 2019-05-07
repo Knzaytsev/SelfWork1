@@ -8,10 +8,10 @@ using namespace std;
 
 int main()
 {
-	const unsigned int n = 5;
-	static signed char mas[n];
-	static signed char num;
-	static signed int index;
+	const unsigned int n = 5;			//Количество элементов в массиве
+	static signed char mas[n];			//Массив
+	static signed char num;				//Искомое число
+	static signed int index;			//Индекс числа
 	for (int i = 0; i < n; ++i) {
 		cin >> mas[i];
 	}

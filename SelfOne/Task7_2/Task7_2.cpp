@@ -8,10 +8,10 @@ using namespace std;
 
 int main()
 {
-	const unsigned int n = 4;
-	const unsigned int m = 16;
-	static signed short mas1[n];
-	static signed short mas2[m];
+	const unsigned int n = 2;			//Количество элементов для первого массива
+	const unsigned int m = n * 5;		//Количество элементов для второго массива
+	static signed short mas1[n];		//Первый массив
+	static signed short mas2[m];		//Второй массив
 	for (int i = 0; i < n; ++i) {
 		cin >> mas1[i];
 	}

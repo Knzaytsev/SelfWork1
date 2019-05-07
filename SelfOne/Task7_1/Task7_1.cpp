@@ -8,9 +8,9 @@ using namespace std;
 
 int main()
 {
-	const unsigned n = 5;
-	static unsigned int mas1[n];
-	static unsigned int mas2[n];
+	const unsigned n = 5;				//Количество элементов в массиве
+	static unsigned int mas1[n];		//Исходный массив
+	static unsigned int mas2[n];		//Массив, в который копируют
 	for (int i = 0; i < n; ++i) {
 		cin >> mas1[i];
 	}

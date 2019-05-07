@@ -8,11 +8,11 @@ using namespace std;
 
 int main()
 {
-	const unsigned int n = 5;
-	const unsigned int m = 2;
-	static unsigned char str[n];
-	static unsigned char substr[m];
-	static signed int res;
+	const unsigned int n = 5;			//Размер строки
+	const unsigned int m = 2;			//Размер подстроки
+	static unsigned char str[n];		//Строка
+	static unsigned char substr[m];		//Подстрока
+	static signed int res;				//Результат
 	for (int i = 0; i < n; ++i) {
 		cin >> str[i];
 	}
@@ -24,7 +24,6 @@ int main()
 		push eax
 		push edi
 		push esi
-		push esp
 		mov al, substr[0]
 		lea edi, str
 		mov ecx, n
@@ -65,7 +64,6 @@ repe	cmpsb
 		pop ecx
 		pop edi
 		pop esi
-		pop esp
 	}
 	cout << res + 0;
 }

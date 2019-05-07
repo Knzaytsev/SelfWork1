@@ -8,11 +8,10 @@ using namespace std;
 
 int main()
 {
-	static unsigned int n;
-	static signed int numb;
-	unsigned int multiple = 10;
-	unsigned int divider = 2;
-	static unsigned char res[CHAR_MAX];
+	static unsigned int n;				//Количество символов в выходной строке
+	static signed int numb;				//Исходное число
+	unsigned int multiple = 10;			//Делитель для перевода
+	static unsigned char res[CHAR_MAX];	//Выходная строка
 	cin >> numb;
 	_asm {
 		push ecx

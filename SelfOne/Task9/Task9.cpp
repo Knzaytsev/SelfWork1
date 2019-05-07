@@ -66,60 +66,6 @@ repnz		scas resmas
 			pop ecx
 			inc esi
 		loop loopCheckMas2
-		jmp quit
-		otherOpMul:
-		cmp al, 42
-		jne otherOpMin
-		mov ecx, n
-		loopMul:
-			cld
-			lea edi, resmas
-			mov al, mas1[esi]
-			push ecx
-			mov ecx, ebx
-			inc ecx
-repnz		scas resmas
-			je nextEl
-			cld
-			lea edi, mas2
-			mov ecx, m
-repnz		scas mas2
-			jne nextEl
-			mov resmas[ebx], al
-			inc ebx
-			nextEl:
-			pop ecx
-			inc esi
-		loop loopMul
-		jmp quit
-		otherOpMin:
-		cmp al, 45
-		jne otherOpIn
-		mov ecx, n
-		loopMinus:
-			cld
-			mov al, mas1[esi]
-			lea edi, resmas
-			push ecx
-			mov ecx, ebx
-			inc ecx
-repnz		scas resmas
-			je nextElMinus
-			cld
-			lea edi, mas2
-			mov ecx, m
-repnz		scas mas2
-			je nextElMinus
-			mov resmas[ebx], al
-			inc ebx
-			nextElMinus:
-			pop ecx
-			inc esi
-		loop loopMinus
-		jmp quit
-		OtherOpIn:
-		mov ecx, ecx
-		quit:
 		mov k, ebx
 		pop eax
 		pop ecx

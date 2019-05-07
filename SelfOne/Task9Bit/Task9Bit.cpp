@@ -8,16 +8,20 @@ using namespace std;
 
 int main()
 {
-	const unsigned int n = 256;
-	const unsigned int m = 2;
-	const unsigned int k = 4;
-	static unsigned resn;
-	static signed char sign;
-	static unsigned char mas1[m];
-	static unsigned char mas2[k];
-	static unsigned char set1[n];
-	static unsigned char set2[n];
-	static unsigned char resset[n];
+	const unsigned int n = 256;				//Количество возможных вариантов
+	const unsigned int m = 2;				//Количество элементов в первом множестве
+	const unsigned int k = 4;				//Количество элементов во втором множестве
+	static unsigned resn;					//Количество элементов в результате
+	static signed char sign;				//Знак операции
+	static unsigned char mas1[m];			//Первый исходный массив
+	static unsigned char mas2[k];			//Второй исходный массив
+	static unsigned char set1[n];			//Первое множество
+	static unsigned char set2[n];			//Второе множество
+	static unsigned char resset[n];			//Результирующее множество
+
+	//Для выполнения операции объединения после ввода первого множества нажать на "+"
+	//Для выполнения операции пересечения после ввода первого множества нажать на "*"
+	//Для выполнения операции разности после ввода первого множества нажать на "-"
 	for (int i = 0; i < m; ++i) {
 		cin >> mas1[i];
 	}
@@ -25,6 +29,7 @@ int main()
 	for (int i = 0; i < k; ++i) {
 		cin >> mas2[i];
 	}
+
 	__asm {
 		push esi
 		push edi
@@ -113,6 +118,7 @@ int main()
 		pop eax
 		pop ecx
 	}
+
 	for (int i = 0; i < resn; ++i) {
 		cout << resset[i] << ' ';
 	}

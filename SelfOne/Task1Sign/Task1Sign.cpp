@@ -9,14 +9,10 @@ using namespace std;
 int main()
 {
 	const unsigned int n = 4;
-	const unsigned int m = 2;
+	const unsigned int m = 6;
 	static signed int A[n][m];
 	static unsigned char min_row = 1;
 	static unsigned char max_col = 1;
-	//unsigned int index;
-	unsigned int count;
-	unsigned int ind_max = 0;
-	unsigned int min;
 	unsigned short divider_row = n * m;
 	unsigned char divider_col = 4;
 	static unsigned int offs = m * 4;

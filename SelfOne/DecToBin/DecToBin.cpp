@@ -8,17 +8,14 @@ using namespace std;
 
 int main()
 {
-	const unsigned int n = 4;
-	unsigned int multiple = 10;
-	unsigned int divider = 2;
-	static unsigned char str[n];
-	static unsigned char res[CHAR_MAX];
-	static signed int resultd;
-	static signed char resultb;
-	static signed short resultw;
-	static bool overb;
-	static bool overw;
-	static bool overd;
+	const unsigned int n = 4;				//Количество строк
+	unsigned int multiple = 10;				//Множитель для перевода
+	static unsigned char str[n];			//Входная строка
+	static unsigned char res[CHAR_MAX];		//Выходная строка
+	static signed int resultd;				//Результат в виде двойного слова
+	static signed char resultb;				//Результат в виде байта
+	static signed short resultw;			//Результат в виде слова
+	//Ввод может быть как +123, -123 или просто 0123
 	for (int i = 0; i < n; ++i) {
 		cin >> str[i];
 	}

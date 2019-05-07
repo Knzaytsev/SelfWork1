@@ -9,17 +9,16 @@ using namespace std;
 int main()
 {
 	static unsigned int m;
-	static unsigned char k;
-	static unsigned int res;
-	static bool ok = true;
+	static unsigned int k;
+	static unsigned int res;		//Результат
+	static bool ok = true;			//Флаг
 	cin >> m;
 	cin >> k;
 	__asm {
 		push ebx
 		push eax
 		push ecx
-		mov al, k
-		sub al, 48
+		mov eax, k
 		call checkK
 		cmp ebx, 0
 		je endComp
@@ -29,29 +28,28 @@ int main()
 		jmp endProg
 		endComp:
 		mov ok, 0 
-		pop ebx
-		pop eax
-		pop ecx
 		jmp endProg
 
 		checkK:
-			mov bl, al
-			dec al
-			and al, bl
+			mov ebx, eax
+			dec eax
+			and eax, ebx
 			xor ebx, ebx
-			cmp al, 0
+			cmp eax, 0
 			jne endProc
 			inc ebx
 			endProc:
 		ret 
 
 		computeMul:
-			mov cl, k
-			sub cl, 48
-			sal eax, cl
+			mov ecx, k
+			mul ecx
 		ret
 
 		endProg:
+		pop ebx
+		pop eax
+		pop ecx
 	}
 	if (ok) {
 		cout << res;

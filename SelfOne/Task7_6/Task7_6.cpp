@@ -8,16 +8,17 @@ using namespace std;
 
 int main()
 {
-	const unsigned int n = 4;
-	static unsigned char mas1[n];
-	static unsigned char mas2[n];
-	static signed int index;
+	const unsigned int n = 4;			//Количество элементов
+	static unsigned char mas1[n];		//Первый массив
+	static unsigned char mas2[n];		//Второй массив
+	static signed int index;			//Индекс
 	for (int i = 0; i < n; ++i) {
 		cin >> mas1[i];
 	}
 	for (int i = 0; i < n; ++i) {
 		cin >> mas2[i];
 	}
+
 	__asm {
 		push ecx
 		push esi
@@ -40,6 +41,7 @@ repe	cmps
 		pop edi
 		pop ebx
 	}
+
 	cout << index;
 }
 
